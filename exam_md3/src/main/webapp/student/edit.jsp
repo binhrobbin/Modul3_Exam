@@ -36,18 +36,19 @@
                 <label >Phone Number</label>
                 <input type="text" class="form-control" name="phone" value="${student.phoneNumber}">
             </div>
+
+<%--                <input type="text" class="form-control" name="class" value="${student.classroom}">--%>
             <div class="form-group">
-                <label >Class</label>
-                <input type="text" class="form-control" name="class" value="${student.classroom}">
+            <label >Class</label>
+            <select name="class" class="form-control" >
+                <<option>${student.classroom}</option>>
+                <option>C0123I3</option>
+                <option>C0222G3</option>
+                <option>C0324H3</option>
+                <option>C0422K3</option>
+                <option>C0522Ư3</option>
+            </select>
             </div>
-<%--            <select name="class" class="form-control" >--%>
-<%--                <<option></option>>--%>
-<%--                <option>C0123I3</option>--%>
-<%--                <option>C0222G3</option>--%>
-<%--                <option>C0324H3</option>--%>
-<%--                <option>C0422K3</option>--%>
-<%--                <option>C0522Ư3</option>--%>
-<%--            </select>--%>
             <div class="form-group mt-2">
                 <button class="btn btn-success" role="button" type="submit">Edit</button>
                 <a id="" class="btn btn-dark" href="/student" role="button">Cancel</a>
